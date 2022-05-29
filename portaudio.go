@@ -845,6 +845,8 @@ func sampleFormat(b reflect.Type) (f C.PaSampleFormat) {
 		f |= C.paInt8
 	case reflect.Uint8:
 		f |= C.paUInt8
+	case reflect.Uint16:
+		f |= C.paUint16
 	}
 	return f
 }
